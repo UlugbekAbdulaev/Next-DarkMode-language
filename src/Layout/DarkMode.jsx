@@ -19,7 +19,7 @@ function DarkMode() {
 
             }}>
                 {
-                    theme == "white" ? <><Image src={dark} alt="dark"/></> : <><Image src={sun} alt="sun"/></>
+                    theme == "white" ? <Image src={dark} alt="dark"/> : <Image src={sun} alt="sun"/>
                 }
             </button>
         </div>
