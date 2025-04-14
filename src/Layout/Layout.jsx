@@ -3,6 +3,7 @@ import { ThemeProvider } from 'next-themes'
 import React, { useEffect } from 'react'
 import Navbar from './Navbar'
 import { useState } from 'react'
+import Footer from './Footer'
 
 function Layout({ children }) {
 
@@ -17,6 +18,7 @@ function Layout({ children }) {
         <ThemeProvider attribute={"class"} defaultTheme="class">
             <Navbar />
             {children}
+            <Footer />
         </ThemeProvider>
     )
 }

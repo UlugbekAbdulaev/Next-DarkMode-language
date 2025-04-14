@@ -3,12 +3,14 @@ import React from 'react'
 import r1 from '@/assets/images/r1.png'
 import r2 from '@/assets/images/r2.png'
 import r3 from '@/assets/images/r3.png'
+import { useTranslations } from 'next-intl' 
 
 function Aside() {
+    const t=useTranslations()
     return (
         <div className='container mx-auto mt-32 '>
             <div className='text-center'><p>Top Selling</p>
-                <p className='font-bold text-4xl'>Top Destinations</p>
+                <p className='font-bold text-4xl'>{t("top")}</p>
             </div>
             <div className='grid grid-cols-3 py-10 pl-12'>
 

@@ -5,12 +5,15 @@ import g2 from '@/assets/icons/Group2.png'
 import g3 from '@/assets/icons/Group3.png'
 import g4 from '@/assets/icons/Group4.png'
 import pos from '@/assets/icons/pos.png'
+import { useTranslations } from 'next-intl'
+
 function Category() {
+    const t=useTranslations()
     return (
         <div className='container mx-auto relative'>
             <div className='text-center'>
                 <p>CATIGORY</p>
-                <p className='font-bold text-4xl'>We Offer Best Services</p>
+                <p className='font-bold text-4xl'>{t("wey")}</p>
             </div>
             <div className='flex justify-between items-center'>
                 <div className='w-[300px] pt-15 px-15 flex flex-col justify-center items-center'>
